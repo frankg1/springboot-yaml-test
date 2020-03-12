@@ -1,16 +1,16 @@
 server:
   port: 8081
 
-person:
-  name: gx
-  age: 12
-  boss: true
-  birth: 2020/02/02
-  maps: {k1: v1,k2: valsss1}
-  list:
-   - lisi
-   - zhaoliu
-  dog:
-    name: tom
-    age: 11
+#person:
+#  name: gx
+#  age: 12
+#  boss: true
+#  birth: 2020/02/02
+#  maps: {k1: v1,k2: valsss1}
+#  list:
+#   - lisi
+#   - zhaoliu
+#  dog:
+#    name: tom
+#    age: 11
 

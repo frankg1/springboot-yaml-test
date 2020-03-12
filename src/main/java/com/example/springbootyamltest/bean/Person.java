@@ -1,6 +1,8 @@
 package com.example.springbootyamltest.bean;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -16,11 +18,14 @@ import java.util.Map;
 *
 * 只有说这个Person组件是容器中的组件，才可以提供容器提供的功能configuratonproperties 所以加上@component注解
 * */
+@PropertySource(value={"classpath:person.properties"})
 @Component
 @ConfigurationProperties(prefix = "person")
 
 public class Person {
+    //@Value("${person.name}")
     private String name;
+    //@Value("${person.age}")
     private Integer age;
     private boolean boss;
     private Date birth;
