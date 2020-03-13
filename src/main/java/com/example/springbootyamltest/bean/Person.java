@@ -18,7 +18,7 @@ import java.util.Map;
 *
 * 只有说这个Person组件是容器中的组件，才可以提供容器提供的功能configuratonproperties 所以加上@component注解
 * */
-@PropertySource(value={"classpath:person.properties"})
+//@PropertySource(value={"classpath:person.properties"})
 @Component
 @ConfigurationProperties(prefix = "person")
 
