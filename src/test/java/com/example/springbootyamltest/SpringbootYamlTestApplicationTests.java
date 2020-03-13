@@ -27,9 +27,13 @@ class SpringbootYamlTestApplicationTests {
     @Test
     public void helloTest(){
 
-
-        Boolean  b =ioc.containsBean("person");
+        //查询的时候是查询他们的bean id
+        Boolean  a =ioc.containsBean("person");
+        Boolean  b =ioc.containsBean("testBean");
+        Boolean  c =ioc.containsBean("helloService");
+        System.out.println(a);
         System.out.println(b);
+        System.out.println(c);
 
     }
 

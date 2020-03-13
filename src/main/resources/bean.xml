@@ -4,4 +4,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="testBean" class="com.example.springbootyamltest.bean.Dog"></bean>
+    <bean id="HelloService" class="com.example.springbootyamltest.service.HelloService" ></bean>
 </beans>
